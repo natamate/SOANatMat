@@ -1,0 +1,6 @@
+c:\users\natalia\source\repos\Lab2SpaceYDTO\Lab2SpaceYDTO\bin\Debug\Lab2SpaceYDTO.dll
+c:\users\natalia\source\repos\Lab2SpaceYDTO\Lab2SpaceYDTO\bin\Debug\Lab2SpaceYDTO.pdb
+c:\users\natalia\source\repos\Lab2SpaceYDTO\Lab2SpaceYDTO\obj\Debug\Lab2SpaceYDTO.csprojResolveAssemblyReference.cache
+c:\users\natalia\source\repos\Lab2SpaceYDTO\Lab2SpaceYDTO\obj\Debug\Lab2SpaceYDTO.csproj.CoreCompileInputs.cache
+c:\users\natalia\source\repos\Lab2SpaceYDTO\Lab2SpaceYDTO\obj\Debug\Lab2SpaceYDTO.dll
+c:\users\natalia\source\repos\Lab2SpaceYDTO\Lab2SpaceYDTO\obj\Debug\Lab2SpaceYDTO.pdb

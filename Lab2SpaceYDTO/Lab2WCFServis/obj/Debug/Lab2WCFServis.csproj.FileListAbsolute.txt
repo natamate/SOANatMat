@@ -1,0 +1,9 @@
+c:\users\natalia\source\repos\Lab2SpaceYDTO\Lab2WCFServis\bin\Debug\Lab2WCFServis.dll.config
+c:\users\natalia\source\repos\Lab2SpaceYDTO\Lab2WCFServis\bin\Debug\Lab2WCFServis.dll
+c:\users\natalia\source\repos\Lab2SpaceYDTO\Lab2WCFServis\bin\Debug\Lab2WCFServis.pdb
+c:\users\natalia\source\repos\Lab2SpaceYDTO\Lab2WCFServis\bin\Debug\Lab2SpaceYDTO.dll
+c:\users\natalia\source\repos\Lab2SpaceYDTO\Lab2WCFServis\bin\Debug\Lab2SpaceYDTO.pdb
+c:\users\natalia\source\repos\Lab2SpaceYDTO\Lab2WCFServis\obj\Debug\Lab2WCFServis.csprojResolveAssemblyReference.cache
+c:\users\natalia\source\repos\Lab2SpaceYDTO\Lab2WCFServis\obj\Debug\Lab2WCFServis.csproj.CoreCompileInputs.cache
+c:\users\natalia\source\repos\Lab2SpaceYDTO\Lab2WCFServis\obj\Debug\Lab2WCFServis.dll
+c:\users\natalia\source\repos\Lab2SpaceYDTO\Lab2WCFServis\obj\Debug\Lab2WCFServis.pdb
