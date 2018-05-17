@@ -1,0 +1,7 @@
+c:\users\natalia\source\repos\MzlLab3Client\MzlLab3Client\bin\Debug\MzlLab3Client.exe.config
+c:\users\natalia\source\repos\MzlLab3Client\MzlLab3Client\bin\Debug\MzlLab3Client.exe
+c:\users\natalia\source\repos\MzlLab3Client\MzlLab3Client\bin\Debug\MzlLab3Client.pdb
+c:\users\natalia\source\repos\MzlLab3Client\MzlLab3Client\obj\Debug\MzlLab3Client.csprojResolveAssemblyReference.cache
+c:\users\natalia\source\repos\MzlLab3Client\MzlLab3Client\obj\Debug\MzlLab3Client.csproj.CoreCompileInputs.cache
+c:\users\natalia\source\repos\MzlLab3Client\MzlLab3Client\obj\Debug\MzlLab3Client.exe
+c:\users\natalia\source\repos\MzlLab3Client\MzlLab3Client\obj\Debug\MzlLab3Client.pdb

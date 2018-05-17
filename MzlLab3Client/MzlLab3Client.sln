@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MzlLab3Client", "MzlLab3Client\MzlLab3Client.csproj", "{8CC14155-7EDC-492D-8C0C-69D68C3EE7B0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8CC14155-7EDC-492D-8C0C-69D68C3EE7B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CC14155-7EDC-492D-8C0C-69D68C3EE7B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CC14155-7EDC-492D-8C0C-69D68C3EE7B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CC14155-7EDC-492D-8C0C-69D68C3EE7B0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BE2DD017-FE6A-4291-8706-98FAEDBD1910}
+	EndGlobalSection
+EndGlobal

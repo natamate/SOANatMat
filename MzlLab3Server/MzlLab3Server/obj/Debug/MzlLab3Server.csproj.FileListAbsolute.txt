@@ -1,0 +1,15 @@
+C:\Users\Natalia\source\repos\MzlLab3Server\MzlLab3Server\bin\Debug\MzlLab3Server.dll.config
+C:\Users\Natalia\source\repos\MzlLab3Server\MzlLab3Server\bin\Debug\MzlLab3Server.dll
+C:\Users\Natalia\source\repos\MzlLab3Server\MzlLab3Server\bin\Debug\MzlLab3Server.pdb
+C:\Users\Natalia\source\repos\MzlLab3Server\MzlLab3Server\bin\Debug\LiteDB.dll
+C:\Users\Natalia\source\repos\MzlLab3Server\MzlLab3Server\bin\Debug\ObjectsManager.LiteDB.dll
+C:\Users\Natalia\source\repos\MzlLab3Server\MzlLab3Server\bin\Debug\ObjectsManager.Model.dll
+C:\Users\Natalia\source\repos\MzlLab3Server\MzlLab3Server\bin\Debug\ObjectsManagerInterface.dll
+C:\Users\Natalia\source\repos\MzlLab3Server\MzlLab3Server\bin\Debug\ObjectsManager.LiteDB.pdb
+C:\Users\Natalia\source\repos\MzlLab3Server\MzlLab3Server\bin\Debug\ObjectsManager.Model.pdb
+C:\Users\Natalia\source\repos\MzlLab3Server\MzlLab3Server\bin\Debug\ObjectsManagerInterface.pdb
+C:\Users\Natalia\source\repos\MzlLab3Server\MzlLab3Server\bin\Debug\LiteDB.xml
+C:\Users\Natalia\source\repos\MzlLab3Server\MzlLab3Server\obj\Debug\MzlLab3Server.csprojResolveAssemblyReference.cache
+C:\Users\Natalia\source\repos\MzlLab3Server\MzlLab3Server\obj\Debug\MzlLab3Server.csproj.CoreCompileInputs.cache
+C:\Users\Natalia\source\repos\MzlLab3Server\MzlLab3Server\obj\Debug\MzlLab3Server.dll
+C:\Users\Natalia\source\repos\MzlLab3Server\MzlLab3Server\obj\Debug\MzlLab3Server.pdb

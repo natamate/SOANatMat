@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ObjectsService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/MzlLab3Server/ObjectsService/?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/MzlLab3Server/ObjectsService/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/MzlLab3Server/ObjectsService/?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ObjectsManager.Model" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IObjectsService_AddMovie_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddMovie" />
+  </wsdl:message>
+  <wsdl:message name="IObjectsService_AddMovie_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddMovieResponse" />
+  </wsdl:message>
+  <wsdl:message name="IObjectsService_GetMovie_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMovie" />
+  </wsdl:message>
+  <wsdl:message name="IObjectsService_GetMovie_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMovieResponse" />
+  </wsdl:message>
+  <wsdl:message name="IObjectsService_GetAllMovies_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllMovies" />
+  </wsdl:message>
+  <wsdl:message name="IObjectsService_GetAllMovies_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllMoviesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IObjectsService_UpdateMovie_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateMovie" />
+  </wsdl:message>
+  <wsdl:message name="IObjectsService_UpdateMovie_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateMovieResponse" />
+  </wsdl:message>
+  <wsdl:message name="IObjectsService_DeleteMovie_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteMovie" />
+  </wsdl:message>
+  <wsdl:message name="IObjectsService_DeleteMovie_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteMovieResponse" />
+  </wsdl:message>
+  <wsdl:message name="IObjectsService_AddPerson_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddPerson" />
+  </wsdl:message>
+  <wsdl:message name="IObjectsService_AddPerson_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddPersonResponse" />
+  </wsdl:message>
+  <wsdl:message name="IObjectsService_GetPerson_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPerson" />
+  </wsdl:message>
+  <wsdl:message name="IObjectsService_GetPerson_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPersonResponse" />
+  </wsdl:message>
+  <wsdl:message name="IObjectsService_GetAllPersons_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllPersons" />
+  </wsdl:message>
+  <wsdl:message name="IObjectsService_GetAllPersons_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllPersonsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IObjectsService_UpdatePerson_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePerson" />
+  </wsdl:message>
+  <wsdl:message name="IObjectsService_UpdatePerson_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePersonResponse" />
+  </wsdl:message>
+  <wsdl:message name="IObjectsService_DeletePerson_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePerson" />
+  </wsdl:message>
+  <wsdl:message name="IObjectsService_DeletePerson_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePersonResponse" />
+  </wsdl:message>
+  <wsdl:message name="IObjectsService_AddReview_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddReview" />
+  </wsdl:message>
+  <wsdl:message name="IObjectsService_AddReview_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddReviewResponse" />
+  </wsdl:message>
+  <wsdl:message name="IObjectsService_GetReview_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReview" />
+  </wsdl:message>
+  <wsdl:message name="IObjectsService_GetReview_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReviewResponse" />
+  </wsdl:message>
+  <wsdl:message name="IObjectsService_GetAllReviews_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllReviews" />
+  </wsdl:message>
+  <wsdl:message name="IObjectsService_GetAllReviews_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllReviewsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IObjectsService_GetAllReviewsForMovie_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllReviewsForMovie" />
+  </wsdl:message>
+  <wsdl:message name="IObjectsService_GetAllReviewsForMovie_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllReviewsForMovieResponse" />
+  </wsdl:message>
+  <wsdl:message name="IObjectsService_UpdateReview_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateReview" />
+  </wsdl:message>
+  <wsdl:message name="IObjectsService_UpdateReview_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateReviewResponse" />
+  </wsdl:message>
+  <wsdl:message name="IObjectsService_DeleteReview_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteReview" />
+  </wsdl:message>
+  <wsdl:message name="IObjectsService_DeleteReview_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteReviewResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IObjectsService">
+    <wsdl:operation name="AddMovie">
+      <wsdl:input wsaw:Action="http://tempuri.org/IObjectsService/AddMovie" message="tns:IObjectsService_AddMovie_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IObjectsService/AddMovieResponse" message="tns:IObjectsService_AddMovie_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMovie">
+      <wsdl:input wsaw:Action="http://tempuri.org/IObjectsService/GetMovie" message="tns:IObjectsService_GetMovie_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IObjectsService/GetMovieResponse" message="tns:IObjectsService_GetMovie_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllMovies">
+      <wsdl:input wsaw:Action="http://tempuri.org/IObjectsService/GetAllMovies" message="tns:IObjectsService_GetAllMovies_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IObjectsService/GetAllMoviesResponse" message="tns:IObjectsService_GetAllMovies_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMovie">
+      <wsdl:input wsaw:Action="http://tempuri.org/IObjectsService/UpdateMovie" message="tns:IObjectsService_UpdateMovie_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IObjectsService/UpdateMovieResponse" message="tns:IObjectsService_UpdateMovie_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMovie">
+      <wsdl:input wsaw:Action="http://tempuri.org/IObjectsService/DeleteMovie" message="tns:IObjectsService_DeleteMovie_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IObjectsService/DeleteMovieResponse" message="tns:IObjectsService_DeleteMovie_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddPerson">
+      <wsdl:input wsaw:Action="http://tempuri.org/IObjectsService/AddPerson" message="tns:IObjectsService_AddPerson_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IObjectsService/AddPersonResponse" message="tns:IObjectsService_AddPerson_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPerson">
+      <wsdl:input wsaw:Action="http://tempuri.org/IObjectsService/GetPerson" message="tns:IObjectsService_GetPerson_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IObjectsService/GetPersonResponse" message="tns:IObjectsService_GetPerson_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPersons">
+      <wsdl:input wsaw:Action="http://tempuri.org/IObjectsService/GetAllPersons" message="tns:IObjectsService_GetAllPersons_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IObjectsService/GetAllPersonsResponse" message="tns:IObjectsService_GetAllPersons_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePerson">
+      <wsdl:input wsaw:Action="http://tempuri.org/IObjectsService/UpdatePerson" message="tns:IObjectsService_UpdatePerson_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IObjectsService/UpdatePersonResponse" message="tns:IObjectsService_UpdatePerson_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePerson">
+      <wsdl:input wsaw:Action="http://tempuri.org/IObjectsService/DeletePerson" message="tns:IObjectsService_DeletePerson_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IObjectsService/DeletePersonResponse" message="tns:IObjectsService_DeletePerson_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddReview">
+      <wsdl:input wsaw:Action="http://tempuri.org/IObjectsService/AddReview" message="tns:IObjectsService_AddReview_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IObjectsService/AddReviewResponse" message="tns:IObjectsService_AddReview_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReview">
+      <wsdl:input wsaw:Action="http://tempuri.org/IObjectsService/GetReview" message="tns:IObjectsService_GetReview_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IObjectsService/GetReviewResponse" message="tns:IObjectsService_GetReview_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllReviews">
+      <wsdl:input wsaw:Action="http://tempuri.org/IObjectsService/GetAllReviews" message="tns:IObjectsService_GetAllReviews_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IObjectsService/GetAllReviewsResponse" message="tns:IObjectsService_GetAllReviews_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllReviewsForMovie">
+      <wsdl:input wsaw:Action="http://tempuri.org/IObjectsService/GetAllReviewsForMovie" message="tns:IObjectsService_GetAllReviewsForMovie_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IObjectsService/GetAllReviewsForMovieResponse" message="tns:IObjectsService_GetAllReviewsForMovie_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateReview">
+      <wsdl:input wsaw:Action="http://tempuri.org/IObjectsService/UpdateReview" message="tns:IObjectsService_UpdateReview_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IObjectsService/UpdateReviewResponse" message="tns:IObjectsService_UpdateReview_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteReview">
+      <wsdl:input wsaw:Action="http://tempuri.org/IObjectsService/DeleteReview" message="tns:IObjectsService_DeleteReview_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IObjectsService/DeleteReviewResponse" message="tns:IObjectsService_DeleteReview_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IObjectsService" type="tns:IObjectsService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddMovie">
+      <soap:operation soapAction="http://tempuri.org/IObjectsService/AddMovie" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMovie">
+      <soap:operation soapAction="http://tempuri.org/IObjectsService/GetMovie" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllMovies">
+      <soap:operation soapAction="http://tempuri.org/IObjectsService/GetAllMovies" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMovie">
+      <soap:operation soapAction="http://tempuri.org/IObjectsService/UpdateMovie" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMovie">
+      <soap:operation soapAction="http://tempuri.org/IObjectsService/DeleteMovie" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddPerson">
+      <soap:operation soapAction="http://tempuri.org/IObjectsService/AddPerson" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPerson">
+      <soap:operation soapAction="http://tempuri.org/IObjectsService/GetPerson" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPersons">
+      <soap:operation soapAction="http://tempuri.org/IObjectsService/GetAllPersons" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePerson">
+      <soap:operation soapAction="http://tempuri.org/IObjectsService/UpdatePerson" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePerson">
+      <soap:operation soapAction="http://tempuri.org/IObjectsService/DeletePerson" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddReview">
+      <soap:operation soapAction="http://tempuri.org/IObjectsService/AddReview" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReview">
+      <soap:operation soapAction="http://tempuri.org/IObjectsService/GetReview" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllReviews">
+      <soap:operation soapAction="http://tempuri.org/IObjectsService/GetAllReviews" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllReviewsForMovie">
+      <soap:operation soapAction="http://tempuri.org/IObjectsService/GetAllReviewsForMovie" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateReview">
+      <soap:operation soapAction="http://tempuri.org/IObjectsService/UpdateReview" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteReview">
+      <soap:operation soapAction="http://tempuri.org/IObjectsService/DeleteReview" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ObjectsService">
+    <wsdl:port name="BasicHttpBinding_IObjectsService" binding="tns:BasicHttpBinding_IObjectsService">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/MzlLab3Server/ObjectsService/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
