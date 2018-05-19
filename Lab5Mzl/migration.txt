@@ -1,0 +1,10 @@
+Wlaczenie migracji
+	1. Wlacz nuget package manager i package manager console
+	2. Wklep Enable-Migrations -ContextTypeName (pelny namespace DbContextu np. MigrationsApp.Models.DbContext )
+Dodanie migracji
+	1. W tej samej konsoli wklep „Add-Migration InitMigration” InitMigration to nazwa migracji
+
+Aktualizacja tabel
+	1. Wklep w konsole polecenie: Update-Database
+
+http://zajacmarek.com/2014/09/code-first-migrations-w-entity-framework-cz-1/
