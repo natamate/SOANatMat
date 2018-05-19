@@ -1,0 +1,11 @@
+c:\users\natalia\source\repos\Lab6CRUDServer\ObjectsManager.LiteDB\bin\Debug\ObjectsManager.LiteDB.dll
+c:\users\natalia\source\repos\Lab6CRUDServer\ObjectsManager.LiteDB\bin\Debug\ObjectsManager.LiteDB.pdb
+c:\users\natalia\source\repos\Lab6CRUDServer\ObjectsManager.LiteDB\bin\Debug\LiteDB.dll
+c:\users\natalia\source\repos\Lab6CRUDServer\ObjectsManager.LiteDB\bin\Debug\ObjectsManager.Interfaces.dll
+c:\users\natalia\source\repos\Lab6CRUDServer\ObjectsManager.LiteDB\bin\Debug\ObjectsManager.Model.dll
+c:\users\natalia\source\repos\Lab6CRUDServer\ObjectsManager.LiteDB\bin\Debug\ObjectsManager.Interfaces.pdb
+c:\users\natalia\source\repos\Lab6CRUDServer\ObjectsManager.LiteDB\bin\Debug\ObjectsManager.Model.pdb
+c:\users\natalia\source\repos\Lab6CRUDServer\ObjectsManager.LiteDB\obj\Debug\ObjectsManager.LiteDB.csprojResolveAssemblyReference.cache
+c:\users\natalia\source\repos\Lab6CRUDServer\ObjectsManager.LiteDB\obj\Debug\ObjectsManager.LiteDB.csproj.CoreCompileInputs.cache
+c:\users\natalia\source\repos\Lab6CRUDServer\ObjectsManager.LiteDB\obj\Debug\ObjectsManager.LiteDB.dll
+c:\users\natalia\source\repos\Lab6CRUDServer\ObjectsManager.LiteDB\obj\Debug\ObjectsManager.LiteDB.pdb

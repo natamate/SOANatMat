@@ -1,0 +1,7 @@
+c:\users\natalia\source\repos\Lab6CRUDServer\Lab6CRUDServer\bin\Debug\Lab6CRUDServer.dll.config
+c:\users\natalia\source\repos\Lab6CRUDServer\Lab6CRUDServer\bin\Debug\Lab6CRUDServer.dll
+c:\users\natalia\source\repos\Lab6CRUDServer\Lab6CRUDServer\bin\Debug\Lab6CRUDServer.pdb
+c:\users\natalia\source\repos\Lab6CRUDServer\Lab6CRUDServer\obj\Debug\Lab6CRUDServer.csprojResolveAssemblyReference.cache
+c:\users\natalia\source\repos\Lab6CRUDServer\Lab6CRUDServer\obj\Debug\Lab6CRUDServer.csproj.CoreCompileInputs.cache
+c:\users\natalia\source\repos\Lab6CRUDServer\Lab6CRUDServer\obj\Debug\Lab6CRUDServer.dll
+c:\users\natalia\source\repos\Lab6CRUDServer\Lab6CRUDServer\obj\Debug\Lab6CRUDServer.pdb

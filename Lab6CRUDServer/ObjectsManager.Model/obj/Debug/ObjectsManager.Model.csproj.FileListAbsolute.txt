@@ -1,0 +1,6 @@
+c:\users\natalia\source\repos\Lab6CRUDServer\ObjectsManager.Model\bin\Debug\ObjectsManager.Model.dll
+c:\users\natalia\source\repos\Lab6CRUDServer\ObjectsManager.Model\bin\Debug\ObjectsManager.Model.pdb
+c:\users\natalia\source\repos\Lab6CRUDServer\ObjectsManager.Model\obj\Debug\ObjectsManager.Model.csproj.CoreCompileInputs.cache
+c:\users\natalia\source\repos\Lab6CRUDServer\ObjectsManager.Model\obj\Debug\ObjectsManager.Model.dll
+c:\users\natalia\source\repos\Lab6CRUDServer\ObjectsManager.Model\obj\Debug\ObjectsManager.Model.pdb
+C:\Users\Natalia\source\repos\Lab6CRUDServer\ObjectsManager.Model\obj\Debug\ObjectsManager.Model.csprojResolveAssemblyReference.cache
