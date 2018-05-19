@@ -1,0 +1,6 @@
+c:\users\natalia\source\repos\LibraryLab4\ObjectsManager.Model\bin\Debug\ObjectsManager.Model.dll
+c:\users\natalia\source\repos\LibraryLab4\ObjectsManager.Model\bin\Debug\ObjectsManager.Model.pdb
+c:\users\natalia\source\repos\LibraryLab4\ObjectsManager.Model\obj\Debug\ObjectsManager.Model.csprojResolveAssemblyReference.cache
+c:\users\natalia\source\repos\LibraryLab4\ObjectsManager.Model\obj\Debug\ObjectsManager.Model.csproj.CoreCompileInputs.cache
+c:\users\natalia\source\repos\LibraryLab4\ObjectsManager.Model\obj\Debug\ObjectsManager.Model.dll
+c:\users\natalia\source\repos\LibraryLab4\ObjectsManager.Model\obj\Debug\ObjectsManager.Model.pdb

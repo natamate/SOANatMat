@@ -1,0 +1,15 @@
+c:\users\natalia\source\repos\LibraryLab4\LibraryLab4\bin\Debug\LibraryLab4.dll.config
+c:\users\natalia\source\repos\LibraryLab4\LibraryLab4\bin\Debug\LibraryLab4.dll
+c:\users\natalia\source\repos\LibraryLab4\LibraryLab4\bin\Debug\LibraryLab4.pdb
+c:\users\natalia\source\repos\LibraryLab4\LibraryLab4\bin\Debug\LiteDB.dll
+c:\users\natalia\source\repos\LibraryLab4\LibraryLab4\bin\Debug\ObjectsManager.Interfaces.dll
+c:\users\natalia\source\repos\LibraryLab4\LibraryLab4\bin\Debug\ObjectsManager.LiteDB.dll
+c:\users\natalia\source\repos\LibraryLab4\LibraryLab4\bin\Debug\ObjectsManager.Model.dll
+c:\users\natalia\source\repos\LibraryLab4\LibraryLab4\bin\Debug\ObjectsManager.Interfaces.pdb
+c:\users\natalia\source\repos\LibraryLab4\LibraryLab4\bin\Debug\ObjectsManager.LiteDB.pdb
+c:\users\natalia\source\repos\LibraryLab4\LibraryLab4\bin\Debug\ObjectsManager.Model.pdb
+c:\users\natalia\source\repos\LibraryLab4\LibraryLab4\bin\Debug\LiteDB.xml
+c:\users\natalia\source\repos\LibraryLab4\LibraryLab4\obj\Debug\LibraryLab4.csprojResolveAssemblyReference.cache
+c:\users\natalia\source\repos\LibraryLab4\LibraryLab4\obj\Debug\LibraryLab4.csproj.CoreCompileInputs.cache
+c:\users\natalia\source\repos\LibraryLab4\LibraryLab4\obj\Debug\LibraryLab4.dll
+c:\users\natalia\source\repos\LibraryLab4\LibraryLab4\obj\Debug\LibraryLab4.pdb

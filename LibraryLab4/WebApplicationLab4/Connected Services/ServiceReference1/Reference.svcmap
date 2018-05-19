@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="498d7fda-651a-444a-aac4-201bf52acec6" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/LibraryLab4/ObjectsService/" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="0d9452a0-ee57-4f76-8d34-912789131787" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/LibraryLab4/ObjectsService/?disco" />
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="7b4865a5-bf44-4f59-957d-780893cb1453" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/LibraryLab4/ObjectsService/?xsd=xsd1" />
+    <MetadataFile FileName="ObjectsService.wsdl" MetadataType="Wsdl" ID="145c6c09-f3dc-4885-ba2c-ed848583893f" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/LibraryLab4/ObjectsService/?wsdl" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="d9055a43-4a14-4105-a0ad-9197164aaffc" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/LibraryLab4/ObjectsService/?xsd=xsd2" />
+    <MetadataFile FileName="item2.xsd" MetadataType="Schema" ID="de7340e8-133c-4670-a3ec-da9e331c9fbb" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/LibraryLab4/ObjectsService/?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
