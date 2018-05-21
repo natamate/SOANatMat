@@ -1,0 +1,8 @@
+c:\users\natalia\source\repos\OldbayNATMAT\ObjectsManager.Interfaces\bin\Debug\ObjectsManager.Interfaces.dll
+c:\users\natalia\source\repos\OldbayNATMAT\ObjectsManager.Interfaces\bin\Debug\ObjectsManager.Interfaces.pdb
+c:\users\natalia\source\repos\OldbayNATMAT\ObjectsManager.Interfaces\bin\Debug\ObjectsManager.Model.dll
+c:\users\natalia\source\repos\OldbayNATMAT\ObjectsManager.Interfaces\bin\Debug\ObjectsManager.Model.pdb
+c:\users\natalia\source\repos\OldbayNATMAT\ObjectsManager.Interfaces\obj\Debug\ObjectsManager.Interfaces.csprojResolveAssemblyReference.cache
+c:\users\natalia\source\repos\OldbayNATMAT\ObjectsManager.Interfaces\obj\Debug\ObjectsManager.Interfaces.csproj.CoreCompileInputs.cache
+c:\users\natalia\source\repos\OldbayNATMAT\ObjectsManager.Interfaces\obj\Debug\ObjectsManager.Interfaces.dll
+c:\users\natalia\source\repos\OldbayNATMAT\ObjectsManager.Interfaces\obj\Debug\ObjectsManager.Interfaces.pdb

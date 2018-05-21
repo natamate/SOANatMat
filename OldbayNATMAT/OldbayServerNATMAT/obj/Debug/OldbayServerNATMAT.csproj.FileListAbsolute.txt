@@ -1,0 +1,15 @@
+c:\users\natalia\source\repos\OldbayNATMAT\OldbayServerNATMAT\bin\Debug\OldbayServerNATMAT.dll.config
+c:\users\natalia\source\repos\OldbayNATMAT\OldbayServerNATMAT\bin\Debug\OldbayServerNATMAT.dll
+c:\users\natalia\source\repos\OldbayNATMAT\OldbayServerNATMAT\bin\Debug\OldbayServerNATMAT.pdb
+c:\users\natalia\source\repos\OldbayNATMAT\OldbayServerNATMAT\bin\Debug\ObjectsManager.Interfaces.dll
+c:\users\natalia\source\repos\OldbayNATMAT\OldbayServerNATMAT\bin\Debug\ObjectsManager.LiteDB.dll
+c:\users\natalia\source\repos\OldbayNATMAT\OldbayServerNATMAT\bin\Debug\ObjectsManager.Model.dll
+c:\users\natalia\source\repos\OldbayNATMAT\OldbayServerNATMAT\bin\Debug\LiteDB.dll
+c:\users\natalia\source\repos\OldbayNATMAT\OldbayServerNATMAT\bin\Debug\ObjectsManager.Interfaces.pdb
+c:\users\natalia\source\repos\OldbayNATMAT\OldbayServerNATMAT\bin\Debug\ObjectsManager.LiteDB.pdb
+c:\users\natalia\source\repos\OldbayNATMAT\OldbayServerNATMAT\bin\Debug\ObjectsManager.LiteDB.dll.config
+c:\users\natalia\source\repos\OldbayNATMAT\OldbayServerNATMAT\bin\Debug\ObjectsManager.Model.pdb
+c:\users\natalia\source\repos\OldbayNATMAT\OldbayServerNATMAT\obj\Debug\OldbayServerNATMAT.csprojResolveAssemblyReference.cache
+c:\users\natalia\source\repos\OldbayNATMAT\OldbayServerNATMAT\obj\Debug\OldbayServerNATMAT.csproj.CoreCompileInputs.cache
+c:\users\natalia\source\repos\OldbayNATMAT\OldbayServerNATMAT\obj\Debug\OldbayServerNATMAT.dll
+c:\users\natalia\source\repos\OldbayNATMAT\OldbayServerNATMAT\obj\Debug\OldbayServerNATMAT.pdb

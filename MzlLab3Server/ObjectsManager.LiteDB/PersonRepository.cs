@@ -26,6 +26,7 @@ namespace ObjectsManager.LiteDB
             }
         }
 
+
         public Person Get(int id)
         {
             using (var db = new LiteDatabase(this._personConnection))

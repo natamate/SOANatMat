@@ -1,0 +1,1188 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Nequeo.Handler</name>
+    </assembly>
+    <members>
+        <member name="T:Nequeo.Handler.Common.InfoHelper">
+            <summary>
+            Global information helper.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Handler.Common.InfoHelper.GetEnvironmentVariables">
+            <summary>
+            Gets the collection of environment variables
+            </summary>
+            <returns>A dictionary containing the collection of environment variables</returns>
+        </member>
+        <member name="M:Nequeo.Handler.Common.InfoHelper.GetEnvironmentVariable(System.Object)">
+            <summary>
+            Get the specified environment variable
+            </summary>
+            <param name="key">The key of the environment variable.</param>
+            <returns>The value of the environment variable.</returns>
+        </member>
+        <member name="M:Nequeo.Handler.Common.InfoHelper.SetEnvironmentVariable(System.Object,System.Object)">
+            <summary>
+            Set the environment variable value fro the key.
+            </summary>
+            <param name="key">The environment variable key.</param>
+            <param name="value">The environment variable value.</param>
+        </member>
+        <member name="M:Nequeo.Handler.Common.InfoHelper.AddEnvironmentVariable(System.Object,System.Object)">
+            <summary>
+            Add the environment variable to the collection.
+            </summary>
+            <param name="key">The environment variable key.</param>
+            <param name="value">The environment variable value.</param>
+        </member>
+        <member name="M:Nequeo.Handler.Common.InfoHelper.GetApplicationConfigurationFile">
+            <summary>
+            Method to locate application configuration file.
+            </summary>
+            <returns>The full path of the logging file, else empty string.</returns>
+        </member>
+        <member name="M:Nequeo.Handler.Common.InfoHelper.GetApplicationConfigurationFile(System.String)">
+            <summary>
+            Method to locate application configuration file.
+            </summary>
+            <param name="specificPath">The specific path of the config file, used for web applications</param>
+            <returns>The application configuration istance else null</returns>
+        </member>
+        <member name="T:Nequeo.Handler.Common.ServiceWebApplicationInformation">
+            <summary>
+            Service web application information.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Handler.Common.ServiceWebApplicationInformation.#ctor(System.String,System.Object,System.Int32)">
+            <summary>
+            Default constructor
+            </summary>
+            <param name="message">The message string.</param>
+            <param name="eventSource">The event source.</param>
+            <param name="eventCode">The event code.</param>
+        </member>
+        <member name="M:Nequeo.Handler.Common.ServiceWebApplicationInformation.GetApplicationDomain">
+            <summary>
+            Get the web application domian.
+            </summary>
+            <returns>The web application domian.</returns>
+        </member>
+        <member name="M:Nequeo.Handler.Common.ServiceWebApplicationInformation.GetApplicationVirtualPath">
+            <summary>
+            Get the web application virtual path.
+            </summary>
+            <returns>The web application virtual path.</returns>
+        </member>
+        <member name="M:Nequeo.Handler.Common.ServiceWebApplicationInformation.GetApplicationPath">
+            <summary>
+            Get the web application physical path.
+            </summary>
+            <returns>The web application physical path.</returns>
+        </member>
+        <member name="M:Nequeo.Handler.Common.ServiceWebApplicationInformation.GetApplicationMachineName">
+            <summary>
+            Get the web application machine name.
+            </summary>
+            <returns>The web application machine name.</returns>
+        </member>
+        <member name="M:Nequeo.Handler.Common.ServiceWebApplicationInformation.GetWebAppHostingPath(System.String)">
+            <summary>
+            Get the web application hosting physical path.
+            </summary>
+            <param name="virtualPath">The web application virtual path.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Handler.Common.ServiceWebApplicationInformation.GetEventAppInfo">
+            <summary>
+            Get the web application information.
+            </summary>
+            <returns>The web application information.</returns>
+        </member>
+        <member name="T:Nequeo.Handler.Configuration.BaseHandlerDefaultSection">
+            <summary>
+            Class that contains the default base handler data
+            within the configuration file.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Handler.Configuration.BaseHandlerDefaultSection.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Handler.Configuration.BaseHandlerDefaultSection.#ctor(System.String)">
+            <summary>
+            Constructor with base handler attribute.
+            </summary>
+            <param name="baseHandlerName">The base handler name attribute.</param>
+        </member>
+        <member name="P:Nequeo.Handler.Configuration.BaseHandlerDefaultSection.BaseHandlerName">
+            <summary>
+            Gets sets, the base handler name attribute value.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Handler.Configuration.BaseHandlerDefaultSection.BaseHandlerSection">
+            <summary>
+            Gets sets, the base handler section attributes.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Handler.Configuration.BaseHandlerDefaultSection.DeserializeSection(System.Xml.XmlReader)">
+            <summary>
+            Reads XML from the configuration file.
+            </summary>
+            <param name="reader">The System.Xml.XmlReader object, 
+            which reads from the configuration file.</param>
+        </member>
+        <member name="M:Nequeo.Handler.Configuration.BaseHandlerDefaultSection.SerializeSection(System.Configuration.ConfigurationElement,System.String,System.Configuration.ConfigurationSaveMode)">
+            <summary>
+            Creates an XML string containing an unmerged view of the 
+            System.Configuration.ConfigurationSection
+             object as a single section to write to a file.
+            </summary>
+            <param name="parentElement">The System.Configuration.ConfigurationElement 
+            instance to use as the parent when performing the un-merge.</param>
+            <param name="name">The name of the section to create.</param>
+            <param name="saveMode">The System.Configuration.ConfigurationSaveMode 
+            instance to use when writing to a string.</param>
+            <returns>An XML string containing an unmerged view of the 
+            System.Configuration.ConfigurationSection object.</returns>
+        </member>
+        <member name="T:Nequeo.Handler.Configuration.BaseHandlerElement">
+            <summary>
+            Class that contains all the base handler attributes.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Handler.Configuration.BaseHandlerElement.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Handler.Configuration.BaseHandlerElement.#ctor(System.Boolean,System.String,System.Boolean,System.String,System.Boolean,System.String,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Constructor with base handler attributes
+            </summary>
+            <param name="processLogFilePathIsRelative">The Process Log File Path Is Relative attribute</param>
+            <param name="processLogFilePath">The Process LogFile Path attribute</param>
+            <param name="errorLogFilePathIsRelative">The Error Log File Path Is Relative attribute</param>
+            <param name="errorLogFilePath">The Error Log File Path attribute.</param>
+            <param name="sessionStatePathIsRelative">The Session State Path Is Relative attribute</param>
+            <param name="sessionStatePath">The Session State Path attribute.</param>
+            <param name="membershipCacheTimeOut">The Membership Cache Time Out attribute.</param>
+            <param name="processLogFileMaxSize">The Process Log File Max Size attribute.</param>
+            <param name="errorLogFileMaxSize">The Error Log File Max Size attribute.</param>
+        </member>
+        <member name="P:Nequeo.Handler.Configuration.BaseHandlerElement.ProcessLogFilePathIsRelative">
+            <summary>
+            Gets sets, the Process Log File Path Is Relative attribute.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Handler.Configuration.BaseHandlerElement.ProcessLogFilePath">
+            <summary>
+            Gets sets, the Process LogFile Path attribute.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Handler.Configuration.BaseHandlerElement.ProcessLogFileMaxSize">
+            <summary>
+            Gets sets, the Process Log File Max Size attribute.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Handler.Configuration.BaseHandlerElement.ErrorLogFilePathIsRelative">
+            <summary>
+            Gets sets, the Error Log File Path Is Relative attribute.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Handler.Configuration.BaseHandlerElement.ErrorLogFilePath">
+            <summary>
+            Gets sets, the Error Log File Path attribute.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Handler.Configuration.BaseHandlerElement.ErrorLogFileMaxSize">
+            <summary>
+            Gets sets, the Error Log File Max Size attribute.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Handler.Configuration.BaseHandlerElement.SessionStatePathIsRelative">
+            <summary>
+            Gets sets, the Session State Path Is Relative attribute.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Handler.Configuration.BaseHandlerElement.SessionStatePath">
+            <summary>
+            Gets sets, the Session State Path attribute.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Handler.Configuration.BaseHandlerElement.MembershipCacheTimeOut">
+            <summary>
+            Gets sets, the Membership Cache Time Out attribute.
+            </summary>
+        </member>
+        <member name="T:Nequeo.Handler.Configuration.BaseTypeHandlerDefaultSection">
+            <summary>
+            Class that contains the collection of all extension
+            data within the configuration file.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Handler.Configuration.BaseTypeHandlerDefaultSection.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Handler.Configuration.BaseTypeHandlerDefaultSection.HostSection">
+            <summary>
+            Gets sets, the extension collection type.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Handler.Configuration.BaseTypeHandlerDefaultSection.DeserializeSection(System.Xml.XmlReader)">
+            <summary>
+            Reads XML from the configuration file.
+            </summary>
+            <param name="reader">The System.Xml.XmlReader object, 
+            which reads from the configuration file.</param>
+        </member>
+        <member name="M:Nequeo.Handler.Configuration.BaseTypeHandlerDefaultSection.SerializeSection(System.Configuration.ConfigurationElement,System.String,System.Configuration.ConfigurationSaveMode)">
+            <summary>
+            Creates an XML string containing an unmerged view of the 
+            System.Configuration.ConfigurationSection
+             object as a single section to write to a file.
+            </summary>
+            <param name="parentElement">The System.Configuration.ConfigurationElement 
+            instance to use as the parent when performing the un-merge.</param>
+            <param name="name">The name of the section to create.</param>
+            <param name="saveMode">The System.Configuration.ConfigurationSaveMode 
+            instance to use when writing to a string.</param>
+            <returns>An XML string containing an unmerged view of the 
+            System.Configuration.ConfigurationSection object.</returns>
+        </member>
+        <member name="T:Nequeo.Handler.Configuration.BaseTypeHandlerElement">
+            <summary>
+            Class that contains all the extension attributes.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Handler.Configuration.BaseTypeHandlerElement.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Handler.Configuration.BaseTypeHandlerElement.#ctor(System.String,System.String,System.String,System.String,Nequeo.Handler.WriteTo,Nequeo.Handler.LogType)">
+            <summary>
+            Constructor with extension attributes
+            </summary>
+            <param name="name">The name attribute.</param>
+            <param name="assemblyName">The assembly name attribute.</param>
+            <param name="typeName">The type name attribute.</param>
+            <param name="typeMemberName">The type member name attribute.</param>
+            <param name="writeTo">The write to attribute.</param>
+            <param name="logType">The log type to attribute.</param>
+        </member>
+        <member name="P:Nequeo.Handler.Configuration.BaseTypeHandlerElement.Name">
+            <summary>
+            Gets sets, the name attribute.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Handler.Configuration.BaseTypeHandlerElement.AssemblyName">
+            <summary>
+            Gets sets, the assembly name attribute.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Handler.Configuration.BaseTypeHandlerElement.TypeName">
+            <summary>
+            Gets sets, the type name attribute.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Handler.Configuration.BaseTypeHandlerElement.TypeMemberName">
+            <summary>
+            Gets sets, the type member name attribute.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Handler.Configuration.BaseTypeHandlerElement.WriteTo">
+            <summary>
+            Gets sets, the write to attribute.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Handler.Configuration.BaseTypeHandlerElement.LogType">
+            <summary>
+            Gets sets, the log type to attribute.
+            </summary>
+        </member>
+        <member name="T:Nequeo.Handler.Configuration.BaseTypeHandlerCollection">
+            <summary>
+            Class that contains all the exenstion elements
+            found in the configuration file.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Handler.Configuration.BaseTypeHandlerCollection.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Handler.Configuration.BaseTypeHandlerCollection.CreateNewElement">
+            <summary>
+            Create a new configuration element.
+            </summary>
+            <returns>A new host element.</returns>
+        </member>
+        <member name="M:Nequeo.Handler.Configuration.BaseTypeHandlerCollection.GetElementKey(System.Configuration.ConfigurationElement)">
+            <summary>
+            Get the current element key.
+            </summary>
+            <param name="element">The current element.</param>
+            <returns>The current host element key.</returns>
+        </member>
+        <member name="M:Nequeo.Handler.Configuration.BaseTypeHandlerCollection.Add(Nequeo.Handler.Configuration.BaseTypeHandlerElement)">
+            <summary>
+            Add a new host element type to the collection.
+            </summary>
+            <param name="element">The current host element.</param>
+        </member>
+        <member name="P:Nequeo.Handler.Configuration.BaseTypeHandlerCollection.Item(System.Int32)">
+            <summary>
+            Indexer that gets the specified host element
+            for the specified index.
+            </summary>
+            <param name="index">The index of the host element.</param>
+            <returns>The current host element type.</returns>
+        </member>
+        <member name="P:Nequeo.Handler.Configuration.BaseTypeHandlerCollection.Item(System.String)">
+            <summary>
+            Indexer that gets the specified host element
+            for the specified key name.
+            </summary>
+            <param name="Name">The key name of the element.</param>
+            <returns>The current host element type.</returns>
+        </member>
+        <member name="T:Nequeo.Handler.Configuration.BaseHandlerConfigurationManager">
+            <summary>
+            Base handler section group configuration manager.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Handler.Configuration.BaseHandlerConfigurationManager.BaseHandlerElement(System.String)">
+            <summary>
+            Gets, the base handler data default section elements.
+            </summary>
+            <param name="section">The config section group and section name.</param>
+            <returns>The base handler; else null.</returns>
+        </member>
+        <member name="T:Nequeo.Handler.Configuration.BaseTypeHandlerConfigurationManager">
+            <summary>
+            Base Type Handler Configuration Manager
+            </summary>
+        </member>
+        <member name="M:Nequeo.Handler.Configuration.BaseTypeHandlerConfigurationManager.BaseTypeHandlerCollection(System.String)">
+            <summary>
+            Gets, the Base type handler collection elements.
+            </summary>
+            <param name="section">The config section group and section name.</param>
+            <returns>The base type handler; else null.</returns>
+        </member>
+        <member name="M:Nequeo.Handler.Configuration.BaseTypeHandlerConfigurationManager.BaseTypeHandlerElements(System.String)">
+            <summary>
+            Gets sets, the Base type handler elements.
+            </summary>
+            <param name="section">The config section group and section name.</param>
+            <returns>The base type handler; else null.</returns>
+        </member>
+        <member name="T:Nequeo.Handler.ErrorMessageArgs">
+            <summary>
+            Simple encryption argument class containing event handler
+            information for the simple encryption delegate.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Handler.ErrorMessageArgs.#ctor(System.String)">
+            <summary>
+            Constructor for the error message event argument.
+            </summary>
+            <param name="exceptionMessage">The error message within the simple encryption.</param>
+        </member>
+        <member name="P:Nequeo.Handler.ErrorMessageArgs.ExceptionMessage">
+            <summary>
+            Contains the error message within the simple encryption.
+            </summary>
+        </member>
+        <member name="T:Nequeo.Handler.LoggingAttribute">
+            <summary>
+            Logging attribute.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Handler.LoggingAttribute.#ctor(Nequeo.Handler.WriteTo,Nequeo.Handler.LogType)">
+            <summary>
+            Default constructor.
+            </summary>
+            <param name="writeTo">Where the message should be written to.</param>
+            <param name="logType">The type of logging that is to be applied.</param>
+        </member>
+        <member name="M:Nequeo.Handler.LoggingAttribute.#ctor(System.String)">
+            <summary>
+            Default constructor.
+            </summary>
+            <param name="configurationName">The BaseTypeHandlerDefaultSection Extension name.</param>
+        </member>
+        <member name="P:Nequeo.Handler.LoggingAttribute.ConfigurationName">
+            <summary>
+            Gets sets, the configuration extension name.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Handler.LoggingAttribute.WriteTo">
+            <summary>
+            Gets sets, the message should be written to.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Handler.LoggingAttribute.LogType">
+            <summary>
+            Gets sets, the type of logging that is to be applied.
+            </summary>
+        </member>
+        <member name="T:Nequeo.Handler.WriteTo">
+            <summary>
+            This enum holds the error message write to location.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Handler.WriteTo.Default">
+            <summary>
+            Writes to the default pre-defined location.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Handler.WriteTo.EventLog">
+            <summary>
+            Event log.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Handler.WriteTo.File">
+            <summary>
+            File.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Handler.WriteTo.FileAndEventLog">
+            <summary>
+            File and Event Log.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Handler.WriteTo.None">
+            <summary>
+            No location.
+            </summary>
+        </member>
+        <member name="T:Nequeo.Handler.StatusLevel">
+            <summary>
+            This enum holds the status level of a message.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Handler.StatusLevel.None">
+            <summary>
+            No location.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Handler.StatusLevel.High">
+            <summary>
+            Status level high.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Handler.StatusLevel.MediumHigh">
+            <summary>
+            Status level medium high.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Handler.StatusLevel.Medium">
+            <summary>
+            Status level medium.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Handler.StatusLevel.MediumLow">
+            <summary>
+            Status level medium low.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Handler.StatusLevel.Low">
+            <summary>
+            Status level low.
+            </summary>
+        </member>
+        <member name="T:Nequeo.Handler.LogType">
+            <summary>
+            This enum holds the log type when writting to
+            a log file.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Handler.LogType.Error">
+            <summary>
+            Error log type.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Handler.LogType.Process">
+            <summary>
+            Processing log type.
+            </summary>
+        </member>
+        <member name="T:Nequeo.Handler.AsyncLogHandler">
+            <summary>
+            This class contains <![CDATA[ <methods><fields><properties> ]]> for asynchronous error and process handling.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Handler.AsyncLogHandler.#ctor">
+            <summary>
+            Constructor for the current class.
+            </summary>
+        </member>
+        <member name="E:Nequeo.Handler.AsyncLogHandler.AsyncExecuteComplete">
+            <summary>
+            The async execute complete event.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Handler.AsyncLogHandler.Execute(System.Action{Nequeo.Handler.ITypeHandlerBase},System.Object)">
+            <summary>
+            Start a new log execute action.
+            </summary>
+            <param name="action">The action to perform.</param>
+            <param name="actionName">The unique action name; passed to the object sender of the AsyncExecuteComplete handler.</param>
+        </member>
+        <member name="M:Nequeo.Handler.AsyncLogHandler.BeginAction">
+            <summary>
+            Begin async action
+            </summary>
+            <returns>The async result</returns>
+        </member>
+        <member name="M:Nequeo.Handler.AsyncLogHandler.EndAction(System.IAsyncResult)">
+            <summary>
+            End async action
+            </summary>
+            <param name="ar">The async result</param>
+        </member>
+        <member name="M:Nequeo.Handler.AsyncLogHandler.AsyncAction">
+            <summary>
+            Execute the action.
+            </summary>
+        </member>
+        <member name="T:Nequeo.Handler.LogHandler">
+            <summary>
+            This class contains <![CDATA[ <methods><fields><properties> ]]> for error and process handling.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Handler.LogHandler.#ctor(System.String,System.String)">
+            <summary>
+            Constructor for the current class.
+            </summary>
+            <param name="assemblyName">The assembly name when logging.</param>
+            <param name="typeNamespace">The type namespace when logging.</param>
+        </member>
+        <member name="F:Nequeo.Handler.LogHandler._applicationName">
+            <summary>
+            The application name.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Handler.LogHandler._eventName">
+            <summary>
+            The event namespace.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Handler.LogHandler.disposed">
+            <summary>
+            Track whether Dispose has been called.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Handler.LogHandler._logFileThread">
+            <summary>
+            The erite to files thread lock.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Handler.LogHandler._exceptionMessage">
+            <summary>
+            The exception message field.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Handler.LogHandler._processMessage">
+            <summary>
+            The process message field.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Handler.LogHandler._fileNameAndPathError">
+            <summary>
+            The file name and path for errors.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Handler.LogHandler._fileNameAndPathProcessing">
+            <summary>
+            The file name and path for processing.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Handler.LogHandler._overrideLocation">
+            <summary>
+            Get set, this property holds the override location, when
+            writing to an error/process log location.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Handler.LogHandler.ExceptionMessage">
+            <summary>
+            Get, this property holds the current exception.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Handler.LogHandler.ProcessMessage">
+            <summary>
+            Get, this property holds the current process.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Handler.LogHandler.OverrideWriteLocation">
+            <summary>
+            Get set, this property holds the override location, when
+            writing to an error/process log location.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Handler.LogHandler.LogErrorFilePath">
+            <summary>
+            Get set, this property holds the error log file path.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Handler.LogHandler.LogProcessFilePath">
+            <summary>
+            Get set, this property holds the process log file path.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Handler.LogHandler.AppSettingsReader">
+            <summary>
+            Gets, the application settings reader class.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Handler.LogHandler.ConnectionStringsReader">
+            <summary>
+            Gets, the connection strings section reader class.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Handler.LogHandler.BaseHandlerConfigurationReader">
+            <summary>
+            Gets, the base handler configuration section reader class.
+            </summary>
+        </member>
+        <member name="E:Nequeo.Handler.LogHandler.OnError">
+            <summary>
+            This event occurs when an error occurs 
+            attempting to process data.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Handler.LogHandler.GetLastErrorDescription">
+            <summary>
+            Get the last error that has occurred.
+            </summary>
+            <returns>The last error that occured.</returns>
+        </member>
+        <member name="M:Nequeo.Handler.LogHandler.GetLastProcessDescription">
+            <summary>
+            Get the last process that has occurred.
+            </summary>
+            <returns>The last process that occured.</returns>
+        </member>
+        <member name="M:Nequeo.Handler.LogHandler.GetWebApplicationVirtualPath">
+            <summary>
+            Get the web application virtual path.
+            </summary>
+            <returns>The web application virtual path.</returns>
+        </member>
+        <member name="M:Nequeo.Handler.LogHandler.GetWebApplicationPath">
+            <summary>
+            Get the web application physical path.
+            </summary>
+            <returns>The web application physical path.</returns>
+        </member>
+        <member name="M:Nequeo.Handler.LogHandler.Write(System.String,System.String,System.String,System.Int32,Nequeo.Handler.WriteTo,Nequeo.Handler.LogType)">
+            <summary>
+            Method, writes to the selected error/process reporting location.
+            </summary>
+            <param name="className">String, the class that the error occurred in.</param>
+            <param name="member">String, the member that the error occurred in.</param>
+            <param name="message">String, the error message to write.</param>
+            <param name="lineNumber">Integer, the line number of the error.</param>
+            <param name="writeTo">WriteTo, write log to location.</param>
+            <param name="logType">Enum, the log file type.</param>
+        </member>
+        <member name="M:Nequeo.Handler.LogHandler.Write(System.String,System.String,System.String,System.Int32,System.Int32,Nequeo.Handler.WriteTo,Nequeo.Handler.LogType)">
+            <summary>
+            Method, writes to the selected error/process reporting location.
+            </summary>
+            <param name="className">String, the class that the error occurred in.</param>
+            <param name="member">String, the member that the error occurred in.</param>
+            <param name="message">String, the error message to write.</param>
+            <param name="lineNumber">Integer, the line number of the error.</param>
+            <param name="code">Integer, the error/processing code for the operation.</param>
+            <param name="writeTo">WriteTo, write log to location.</param>
+            <param name="logType">Enum, the log file type.</param>
+        </member>
+        <member name="M:Nequeo.Handler.LogHandler.WriteType(System.String,System.Reflection.MemberInfo,System.String)">
+            <summary>
+            Write a message to the selected location from the configuration file.
+            </summary>
+            <param name="message">The message to write.</param>
+            <param name="member">The current member information.</param>
+            <param name="eventApplicationName">The custom event application name.</param>
+        </member>
+        <member name="M:Nequeo.Handler.LogHandler.WriteType(System.String,System.String,System.String)">
+            <summary>
+            Write a message to the selected location from the configuration file.
+            </summary>
+            <param name="message">The message to write.</param>
+            <param name="configurationName">The BaseTypeHandlerDefaultSection Extension name.</param>
+            <param name="eventApplicationName">The custom event application name.</param>
+        </member>
+        <member name="M:Nequeo.Handler.LogHandler.WriteType(System.String,System.Reflection.MemberInfo)">
+            <summary>
+            Write a message to the selected location from the configuration file.
+            </summary>
+            <param name="message">The message to write.</param>
+            <param name="member">The current member information.</param>
+        </member>
+        <member name="M:Nequeo.Handler.LogHandler.WriteType(System.String,System.String)">
+            <summary>
+            Write a message to the selected location from the configuration file.
+            </summary>
+            <param name="message">The message to write.</param>
+            <param name="configurationName">The BaseTypeHandlerDefaultSection Extension name.</param>
+        </member>
+        <member name="M:Nequeo.Handler.LogHandler.WriteType(System.String,System.String,System.Int32)">
+            <summary>
+            Write a message to the selected location from the configuration file.
+            </summary>
+            <param name="message">The message to write.</param>
+            <param name="configurationName">The BaseTypeHandlerDefaultSection Extension name.</param>
+            <param name="code">A custom code identifier.</param>
+        </member>
+        <member name="M:Nequeo.Handler.LogHandler.WriteToEventLog(System.String)">
+            <summary>
+            Write the message to the event log.
+            </summary>
+            <param name="message">String, the error message to write.</param>
+        </member>
+        <member name="M:Nequeo.Handler.LogHandler.WriteMessage(System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32,Nequeo.Handler.WriteTo,Nequeo.Handler.LogType)">
+            <summary>
+            Write the message to the event log.
+            </summary>
+            <param name="applicationName">The application name when logging.</param>
+            <param name="eventNamespace">The event namespace when logging.</param>
+            <param name="className">String, the class that the error occurred in.</param>
+            <param name="method">String, the method that the error occurred in.</param>
+            <param name="message">String, the error message to write.</param>
+            <param name="lineNumber">Integer, the line number of the error.</param>
+            <param name="code">Integer, the error/processing code for the operation.</param>
+            <param name="writeTo">WriteTo, write log to location.</param>
+            <param name="logType">Enum, the log file type.</param>
+        </member>
+        <member name="M:Nequeo.Handler.LogHandler.WriteTypeMessage(System.String,System.Reflection.MemberInfo)">
+            <summary>
+            Write a message to the selected location from the configuration file.
+            </summary>
+            <param name="message">The message to write.</param>
+            <param name="member">The current member information.</param>
+        </member>
+        <member name="M:Nequeo.Handler.LogHandler.WriteTypeMessage(System.String,System.Reflection.MemberInfo,System.String)">
+            <summary>
+            Write a message to the selected location from the configuration file.
+            </summary>
+            <param name="message">The message to write.</param>
+            <param name="member">The current member information.</param>
+            <param name="eventApplicationName">The custom event application name.</param>
+        </member>
+        <member name="M:Nequeo.Handler.LogHandler.WriteTypeMessage(System.String,System.String)">
+            <summary>
+            Write a message to the selected location from the configuration file.
+            </summary>
+            <param name="message">The message to write.</param>
+            <param name="configurationName">The BaseTypeHandlerDefaultSection Extension name.</param>
+        </member>
+        <member name="M:Nequeo.Handler.LogHandler.WriteTypeMessage(System.String,System.String,System.Int32)">
+            <summary>
+            Write a message to the selected location from the configuration file.
+            </summary>
+            <param name="message">The message to write.</param>
+            <param name="configurationName">The BaseTypeHandlerDefaultSection Extension name.</param>
+            <param name="code">A custom code identifier.</param>
+        </member>
+        <member name="M:Nequeo.Handler.LogHandler.WriteMessageToApplicationEventLog(System.String,System.String,System.Diagnostics.EventLogEntryType)">
+            <summary>
+            Write a message to the application tab of the event log.
+            </summary>
+            <param name="applicationName">The application name when logging.</param>
+            <param name="message">The message to log.</param>
+            <param name="entryType">The entry type to log.</param>
+        </member>
+        <member name="M:Nequeo.Handler.LogHandler.WriteErrorEx(System.String,System.String,System.String,System.Int32,System.Int32,Nequeo.Handler.WriteTo,Nequeo.Handler.LogType)">
+            <summary>
+            Method, writes to the selected error reporting location.
+            </summary>
+            <param name="className">String, the class that the error occurred in.</param>
+            <param name="method">String, the method that the error occurred in.</param>
+            <param name="message">String, the error message to write.</param>
+            <param name="lineNumber">Integer, the line number of the error.</param>
+            <param name="code">Integer, the error/processing code for the operation.</param>
+            <param name="writeTo">WriteTo, write log to location.</param>
+            <param name="logType">Enum, the log file type.</param>
+        </member>
+        <member name="M:Nequeo.Handler.LogHandler.WriteErrorToEventLog(System.String,System.String,System.String,System.Int32,System.Int32,Nequeo.Handler.LogType)">
+            <summary>
+            Write the message to the event log.
+            </summary>
+            <param name="className">String, the class that the error occurred in.</param>
+            <param name="method">String, the method that the error occurred in.</param>
+            <param name="message">String, the error message to write.</param>
+            <param name="lineNumber">Integer, the line number of the error.</param>
+            <param name="code">Integer, the error/processing code for the operation.</param>
+            <param name="logType">Enum, the log file type.</param>
+        </member>
+        <member name="M:Nequeo.Handler.LogHandler.WriteErrorToFile(System.String,System.String,System.String,System.Int32,System.Int32,Nequeo.Handler.LogType)">
+            <summary>
+            Method, write the error to the file.
+            </summary>
+            <param name="className">String, the class that the error occurred in.</param>
+            <param name="method">String, the method that the error occurred in.</param>
+            <param name="message">String, the error message to write.</param>
+            <param name="lineNumber">Integer, the line number of the error.</param>
+            <param name="code">Integer, the error/processing code for the operation.</param>
+            <param name="logType">Enum, the log file type.</param>
+            <remarks></remarks>
+        </member>
+        <member name="M:Nequeo.Handler.LogHandler.GeneralError(System.String,System.String)">
+            <summary>
+            Write the base level error message to the event log.
+            </summary>
+            <param name="message">The message to write.</param>
+            <param name="originalMessage">The original message that was sent.</param>
+        </member>
+        <member name="M:Nequeo.Handler.LogHandler.Dispose">
+            <summary>
+            Implement IDisposable.
+            Do not make this method virtual.
+            A derived class should not be able to override this method.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Handler.LogHandler.Dispose(System.Boolean)">
+            <summary>
+            Dispose(bool disposing) executes in two distinct scenarios.
+            If disposing equals true, the method has been called directly
+            or indirectly by a user's code. Managed and unmanaged resources
+            can be disposed.
+            If disposing equals false, the method has been called by the
+            runtime from inside the finalizer and you should not reference
+            other objects. Only unmanaged resources can be disposed.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Handler.LogHandler.Finalize">
+            <summary>
+            Use C# destructor syntax for finalization code.
+            This destructor will run only if the Dispose method
+            does not get called.
+            It gives your base class the opportunity to finalize.
+            Do not provide destructors in types derived from this class.
+            </summary>
+        </member>
+        <member name="T:Nequeo.Handler.WriteToLogFileThread">
+            <summary>
+            Offline threaded class when writting to
+            a file containing a message.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Handler.WriteToLogFileThread.#ctor">
+            <summary>
+            Constructor for the current class.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Handler.WriteToLogFileThread.WriteErrorToEventLog(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            Write the message to the event log.
+            </summary>
+            <param name="className">String, the class that the error occurred in.</param>
+            <param name="method">String, the method that the error occurred in.</param>
+            <param name="message">String, the error message to write.</param>
+            <param name="lineNumber">Integer, the line number of the error.</param>
+        </member>
+        <member name="M:Nequeo.Handler.WriteToLogFileThread.WriteMessageToLogFile(System.String,System.String,System.Int64)">
+            <summary>
+            Write the specified message to the file.
+            </summary>
+            <param name="message">The message to write.</param>
+            <param name="file">The name of the file.</param>
+            <param name="maxFileSize">The maximun file size before creating a new file.</param>
+        </member>
+        <member name="T:Nequeo.Handler.ITypeHandlerBase">
+            <summary>
+            Exception handler interface.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Handler.ITypeHandlerBase.WriteType(System.String,System.Reflection.MemberInfo,System.String)">
+            <summary>
+            Write a message to the selected location from the configuration file.
+            </summary>
+            <param name="message">The message to write.</param>
+            <param name="member">The current member information.</param>
+            <param name="eventApplicationName">The custom event application name.</param>
+        </member>
+        <member name="M:Nequeo.Handler.ITypeHandlerBase.WriteType(System.String,System.String,System.String)">
+            <summary>
+            Write a message to the selected location from the configuration file.
+            </summary>
+            <param name="message">The message to write.</param>
+            <param name="configurationName">The BaseTypeHandlerDefaultSection Extension name.</param>
+            <param name="eventApplicationName">The custom event application name.</param>
+        </member>
+        <member name="T:Nequeo.Handler.ITypeHandler">
+            <summary>
+            Exception handler interface.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Handler.ITypeHandler.WriteType(System.String,System.Reflection.MemberInfo)">
+            <summary>
+            Write a message to the selected location from the configuration file.
+            </summary>
+            <param name="message">The message to write.</param>
+            <param name="member">The current member information.</param>
+        </member>
+        <member name="M:Nequeo.Handler.ITypeHandler.WriteType(System.String,System.String)">
+            <summary>
+            Write a message to the selected location from the configuration file.
+            </summary>
+            <param name="message">The message to write.</param>
+            <param name="configurationName">The BaseTypeHandlerDefaultSection Extension name.</param>
+        </member>
+        <member name="M:Nequeo.Handler.ITypeHandler.WriteType(System.String,System.String,System.Int32)">
+            <summary>
+            Write a message to the selected location from the configuration file.
+            </summary>
+            <param name="message">The message to write.</param>
+            <param name="configurationName">The BaseTypeHandlerDefaultSection Extension name.</param>
+            <param name="code">A custom code identifier.</param>
+        </member>
+        <member name="T:Nequeo.Handler.IHandler">
+            <summary>
+            Exception handler interface.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Handler.IHandler.Write(System.String,System.String,System.String,System.Int32,Nequeo.Handler.WriteTo,Nequeo.Handler.LogType)">
+            <summary>
+            Method, writes to the selected error reporting location.
+            </summary>
+            <param name="className">String, the class that the error occurred in.</param>
+            <param name="member">String, the member that the error occurred in.</param>
+            <param name="message">String, the error message to write.</param>
+            <param name="lineNumber">Integer, the line number of the error.</param>
+            <param name="writeTo">WriteTo, write log to location.</param>
+            <param name="logType">Enum, the log file type.</param>
+        </member>
+        <member name="M:Nequeo.Handler.IHandler.Write(System.String,System.String,System.String,System.Int32,System.Int32,Nequeo.Handler.WriteTo,Nequeo.Handler.LogType)">
+            <summary>
+            Method, writes to the selected error/process reporting location.
+            </summary>
+            <param name="className">String, the class that the error occurred in.</param>
+            <param name="member">String, the member that the error occurred in.</param>
+            <param name="message">String, the error message to write.</param>
+            <param name="lineNumber">Integer, the line number of the error.</param>
+            <param name="code">Integer, the error/processing code for the operation.</param>
+            <param name="writeTo">WriteTo, write log to location.</param>
+            <param name="logType">Enum, the log file type.</param>
+        </member>
+        <member name="M:Nequeo.Handler.IHandler.GetLastErrorDescription">
+            <summary>
+            Get the last error that has occurred.
+            </summary>
+            <returns>The last error that occured.</returns>
+        </member>
+        <member name="M:Nequeo.Handler.IHandler.GetLastProcessDescription">
+            <summary>
+            Get the last process that has occurred.
+            </summary>
+            <returns>The last process that occured.</returns>
+        </member>
+        <member name="M:Nequeo.Handler.IHandler.WriteToEventLog(System.String)">
+            <summary>
+            Write the message to the event log.
+            </summary>
+            <param name="sMessage">String, the error message to write.</param>
+        </member>
+        <member name="P:Nequeo.Handler.IHandler.LogErrorFilePath">
+            <summary>
+            This property holds the error log file path.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Handler.IHandler.LogProcessFilePath">
+            <summary>
+            This property holds the process log file path.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Handler.IHandler.AppSettingsReader">
+            <summary>
+            The application settings reader class.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Handler.IHandler.ConnectionStringsReader">
+            <summary>
+            Gets, the connection strings section reader class.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Handler.IHandler.BaseHandlerConfigurationReader">
+            <summary>
+            Gets, the base handler configuration section reader class.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Handler.IHandler.GetWebApplicationVirtualPath">
+            <summary>
+            Get the web application virtual path.
+            </summary>
+            <returns>The web application virtual path.</returns>
+        </member>
+        <member name="M:Nequeo.Handler.IHandler.GetWebApplicationPath">
+            <summary>
+            Get the web application physical path.
+            </summary>
+            <returns>The web application physical path.</returns>
+        </member>
+        <member name="T:Nequeo.Handler.Global.DatabaseConnections">
+            <summary>
+            Class contains methods to retreive connection configuration
+            information from the config file.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Handler.Global.DatabaseConnections.#ctor">
+            <summary>
+            Constructor for the current class.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Handler.Global.DatabaseConnections.DatabaseConnection(System.String,System.String@)">
+            <summary>
+            Method to retrieve the specified database
+            connection key from the connection string section.
+            </summary>
+            <param name="configurationKey">The configuration key.</param>
+            <param name="providerName">The provider type name.</param>
+            <returns>The database connection string, else empty string.</returns>
+        </member>
+        <member name="T:Nequeo.Handler.Global.IDatabaseConnection">
+            <summary>
+            Configuration connection interface.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Handler.Global.IDatabaseConnection.DatabaseConnection(System.String,System.String@)">
+            <summary>
+            Method to retrieve the specified database
+            connection key from the connection string section.
+            </summary>
+            <param name="configurationKey">The configuration key.</param>
+            <param name="providerName">The provider type name.</param>
+            <returns>The database connection string.</returns>
+        </member>
+        <member name="T:Nequeo.Handler.Global.ProcessLogging">
+            <summary>
+            Class contains methods for processing information
+            to the specified log file or retrieving configuration
+            information from the application config file.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Handler.Global.ProcessLogging.#ctor">
+            <summary>
+            Constructor for the current class.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Handler.Global.ProcessLogging.LogFilePathProcess(System.String,System.String)">
+            <summary>
+            Method to locate file log path within the
+            application configuration file.
+            </summary>
+            <param name="fileName">The filename of the file to create or open.</param>
+            <param name="specificPath">The specific path of the config file, used for web applications.</param>
+            <returns>The full path of the logging file, else empty string.</returns>
+        </member>
+        <member name="M:Nequeo.Handler.Global.ProcessLogging.LogFilePathError(System.String,System.String)">
+            <summary>
+            Method to locate file log path within the
+            application configuration file.
+            </summary>
+            <param name="fileName">The filename of the file to create or open.</param>
+            <param name="specificPath">The specific path of the config file, used for web applications.</param>
+            <returns>The full path of the logging file, else empty string.</returns>
+        </member>
+        <member name="M:Nequeo.Handler.Global.ProcessLogging.ErrorLoggingFilePath(System.String,System.String)">
+            <summary>
+            Method to locate error file log path within the
+            application configuration file.
+            </summary>
+            <param name="fileName">The filename of the file to create or open.</param>
+            <param name="specificPath">The specific path of the config file, used for web applications.</param>
+            <returns>The full path of the logging file.</returns>
+        </member>
+        <member name="M:Nequeo.Handler.Global.ProcessLogging.ProcessLoggingFilePath(System.String,System.String)">
+            <summary>
+            Method to locate process file log path within the
+            application configuration file.
+            </summary>
+            <param name="fileName">The filename of the file to create or open.</param>
+            <param name="specificPath">The specific path of the config file, used for web applications.</param>
+            <returns>The full path of the logging file.</returns>
+        </member>
+        <member name="T:Nequeo.Handler.Global.ILogFile">
+            <summary>
+            Process logging file path interface.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Handler.Global.ILogFile.ErrorLoggingFilePath(System.String,System.String)">
+            <summary>
+            Method to locate error file log path within the
+            application configuration file.
+            </summary>
+            <param name="fileName">The filename of the file to create or open.</param>
+            <param name="specificPath">The specific path of the config file, used for web applications.</param>
+            <returns>The full path of the logging file.</returns>
+        </member>
+        <member name="M:Nequeo.Handler.Global.ILogFile.ProcessLoggingFilePath(System.String,System.String)">
+            <summary>
+            Method to locate process file log path within the
+            application configuration file.
+            </summary>
+            <param name="fileName">The filename of the file to create or open.</param>
+            <param name="specificPath">The specific path of the config file, used for web applications.</param>
+            <returns>The full path of the logging file.</returns>
+        </member>
+        <member name="T:Nequeo.Handler.Global.SessionState">
+            <summary>
+            Class contains methods for setting the
+            session state data storage path.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Handler.Global.SessionState.#ctor">
+            <summary>
+            Constructor for the current class.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Handler.Global.SessionState.SessionStatePathEx(System.String)">
+            <summary>
+            Method to locate file log path within the
+            application configuration file.
+            </summary>
+            <param name="specificPath">The specific path of the config file, used for web applications.</param>
+            <returns>The full path of the logging file, else empty string.</returns>
+        </member>
+        <member name="M:Nequeo.Handler.Global.SessionState.SessionStatePath(System.String)">
+            <summary>
+            Get the session state path.
+            </summary>
+            <param name="specificPath">The specific path of the config file, used for web applications.</param>
+            <returns>The full path of the logging file.</returns>
+        </member>
+        <member name="M:Nequeo.Handler.Global.SessionState.GetSessionStatePath(System.String)">
+            <summary>
+            Get the session state path.
+            </summary>
+            <param name="specificPath">The specific path of the config file, used for web applications.</param>
+            <returns>The full path of the logging file.</returns>
+        </member>
+        <member name="M:Nequeo.Handler.Global.SessionState.GetWebAppSessionStatePath">
+            <summary>
+            Get the session state path for a web application.
+            </summary>
+            <returns>The full path of the logging file.</returns>
+        </member>
+        <member name="T:Nequeo.Handler.Global.ISessionState">
+            <summary>
+            Interface contains methods for setting the
+            session state data storage path.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Handler.Global.ISessionState.SessionStatePath(System.String)">
+            <summary>
+            Get the session state path.
+            </summary>
+            <param name="specificPath">The specific path of the config file, used for web applications.</param>
+            <returns>The full path of the logging file.</returns>
+        </member>
+    </members>
+</doc>
